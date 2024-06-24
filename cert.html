@@ -10,17 +10,42 @@
         /* Custom CSS for center alignment and formatting */
         .posts {
             display: flex;
-            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-around;
             align-items: center;
-            text-align: center;
             margin-top: 50px; /* Adjust as needed */
         }
         .posts article {
-            margin-bottom: 40px; /* Adjust spacing between articles */
-            max-width: 600px; /* Adjust article width */
+            width: 300px; /* Adjust article width */
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px; /* Adjust spacing between articles */
+            text-align: center; /* Align text content to the center within article */
+            padding: 20px;
+            border-radius: 5px;
         }
-        .posts h2 {
-            margin-bottom: 20px; /* Adjust heading bottom margin */
+        .posts article .image {
+            max-width: 100%; /* Ensure image doesn't exceed container width */
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .posts article p {
+            text-align: left; /* Align paragraphs to the left */
+        }
+        .posts article header {
+            margin-bottom: 10px; /* Adjust heading bottom margin */
+            text-align: left; /* Keep headers left-aligned */
+        }
+        .button {
+            background-color: #ff4500;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #e63946;
         }
     </style>
 </head>
