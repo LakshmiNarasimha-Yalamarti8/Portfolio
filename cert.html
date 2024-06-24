@@ -22,6 +22,23 @@
         .posts h2 {
             margin-bottom: 20px; /* Adjust heading bottom margin */
         }
+        /* Centering all elements */
+        body, #wrapper, #intro, #header, #nav, #main, .split {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        #main {
+            width: 100%;
+        }
+        .split section {
+            margin: 20px 0;
+        }
+        /* Adjusting widths to center content */
+        .posts, .split.contact {
+            width: 80%;
+        }
     </style>
 </head>
 <body class="is-preload">
@@ -60,26 +77,25 @@
                 <!-- SQL Certifications -->
                 <article>
                     <header>
-                        <h2><a href="certs/sql.html">SQL Certifications</a></h2>
+                        <h2><a href="certs/sql.html">SQL<br/>Certifications</a></h2>
                     </header>
-                    <a href="certs/sql.html" class="image fit"><img src="certifications/sql/sql.png"  />
-                    </a>
+                    <a href="certs/sql.html" class="image fit"><img src="certifications/sql/sql.png" /></a>
                 </article>
 
                 <!-- Power BI Certifications -->
                 <article>
                     <header>
-                        <h2><a href="certs/powerbi.html">Power BI Certifications</a></h2>
+                        <h2><a href="certs/powerbi.html">Power BI<br/>Certifications</a></h2>
                     </header>
-                    <a href="certs/powerbi.html" class="image fit"><img src="certifications/powerbi/bi.png" alt="Power BI Certifications" /></a>
+                    <a href="certs/powerbi.html" class="image fit"><img src="certifications/powerbi/bi.png" /></a>
                 </article>
 
                 <!-- Python Certifications -->
                 <article>
                     <header>
-                        <h2><a href="certs/python.html">Python Certifications</a></h2>
+                        <h2><a href="certs/python.html">Python<br/>Certifications</a></h2>
                     </header>
-                    <a href="certs/python.html" class="image fit"><img src="certifications/python/python.png"  /></a>
+                    <a href="certs/python.html" class="image fit"><img src="certifications/python/python.png" /></a>
                 </article>
 
             </section>
